@@ -4,11 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página de Receitas</title>
+    <link rel="stylesheet" href="estilos.css" />
+
+    <style>
+        header{
+            background-color: rgba(190, 91, 20, 0.329);
+            text-align: center;
+            border: solid black 2px;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color:rgba(112, 5, 5, 0.562);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        }
+        .artigos{
+            font-family: sans-serif;
+        }
+    </style>
   </head>
 
   <body>
     <header>
-      <h1>Página de Receitas</h1>
+      <h1 style="color:rgb(255, 38, 0); font-family: sans-serif;">Página de Receitas</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="bolo.html">Bolo</a>
@@ -22,7 +40,7 @@
     <main>
       <h2>Esta é uma página para encontrar boas receitas</h2>
 
-      <article>
+      <article id="receitaspraticas" class="artigos">
         <h3>Receitas praticas</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />Natus
@@ -34,7 +52,7 @@
 
       <hr />
 
-      <article>
+      <article class "artigos">
         <h3>Receitas mais elaboradas para jantares</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut id

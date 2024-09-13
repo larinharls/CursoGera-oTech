@@ -1,0 +1,27 @@
+/*Seletor de ID*/
+#receitasPraticas{
+    background-color: aquamarine;
+}
+/*Seletor de TAG*/
+header {
+    background-color: rgb(175, 245, 245);
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(3, 53, 3);
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+
+  /*Seletor de classe*/
+  .artigos {
+    font-family: sans-serif;
+  }
+
+  body{
+    background-color: azure;
+    background-image: url('');
+    
+  }
