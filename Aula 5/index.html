@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    tr th, td {
+        border: solid 2px black;
+    }
+    table {
+        border-collapse: collapse;
+    }
+</style>
+
+</head>
+<body>
+    
+<!-- Tabelas -->
+<table>
+    <caption>Nomes e idades</caption>
+    <colgroup>
+        <col style="background-color: aqua;">
+        <col span="2" style="">
+    </colgroup>
+    <tr>
+        <th>Nome</th>
+        <th>Características</th>
+        <th>Cidade</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Maria</td>
+        <td>Idade 26</td>
+        <td rowspan="2">Fortaleza</td>
+    </tr>
+
+    <tr>
+        <!--Maria-->
+        <td>Altura 1,65</td>
+        <!--Fortaleza-->
+    </tr>
+    <tr>
+        <!--Maria-->
+        <td colspan="3">Carlos</td>
+    </tr>
+
+</table>
+</body>
+</html>
