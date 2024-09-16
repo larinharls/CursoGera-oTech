@@ -9,13 +9,16 @@
 
 </head>
    <style>
-form {
-    background-color: rgba(128, 128, 128, 0.432);
-    padding: 20px;
-    width: 500px;
-    border-radius: 5px;
-    text-align: ;
-}
+        h2 {
+            text-align: center;
+        }
+        form {
+            background-color: rgba(128, 128, 128, 0.432);
+            padding: 20px;
+            width: 500px;
+            border-radius: 5px;
+            text-align: ;
+        }
     </style>
 
 <body>
@@ -35,16 +38,41 @@ form {
     </select>
     <br><br>
 
-    <label for="genero">Gênero:</label><br>
+    <label for="genero">Gênero:</label>
 
-    <label for="genero">Masculino:</label>
-    <input type="radio" name="genero" id= "genero" value="masculino">
+    <input type="radio" name="genero" id= "genero" value="masculino" required>
+    <label for="genero">Masculino</label>
+
+    <input type="radio" name="genero" id= "genero" value="feminino" required>
+    <label for="genero">Feminino</label>
     
+    <input type="radio" name="genero" id= "genero" value="outro" required>
+    <label for="genero">Outro</label>
 
+    <br><br>
 
+    <label for="cidade">Unidade de Interesse:</label>
 
-    </form>
+    <input type="checkbox" name="cidade" id= "cidade" value="fortaleza" required>
+    <label for="cidade">Fortaleza</label>
+
+    <input type="checkbox" name="cidade" id= "cidade" value="caucaia" required>
+    <label for="cidade">Caucaia</label>
+
+    <input type="checkbox" name="cidade" id= "cidade" value="eusébio" required>
+    <label for="cidade">Eusébio</label>
+
+    <br><br>
+
+    <label for="texto">Fale mais sobre você:</label><br>
+    <textarea style="resize: none;" id="" rows="5" cols="50" maxlength="30"></textarea>
+    <br>
+
+    <div>
+        <br>
+        <input type="submit" value="Enviar">
+    </div>
+</form>
     
-
 </body>
 </html>
