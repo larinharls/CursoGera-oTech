@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Flexbox - Flexible Box Layout</title>
+		<meta charset="utf-8">
+
+		<style type="text/css">
+			
+			#conteudo {
+				background: #dcdcdc;
+				height: 600px;
+				display: flex;
+
+				/*
+				row|row-reverse|column|column-reverse 
+				*/
+				flex-direction: row;
+				
+				/*
+				nowrap|wrap|wrap-reverse
+				*/
+				flex-wrap: wrap ;
+				
+				/*
+				flex-start|flex-end|center|space-between|space-around
+				*/
+				justify-content:space-around;
+				
+				/*
+				stretch|center|flex-start|flex-end|baseline
+				*/
+				align-items:center;
+
+				/*stretch | flex-start | flex-end | center | space-between | space-around*/
+				/*
+				align-content:
+
+				*/
+
+
+				
+			}
+
+			.item {
+				margin:10;
+				background: white;
+				border: 1px solid gray;
+				height: 300px;
+				width: 200px;
+				padding: 0px;
+				margin: 0px;
+				
+			}
+			p{
+				text-align: justify;
+				background-color: aqua;
+				padding: 10px;
+				border: solid 5px purple;
+				margin: 10px;
+			}
+			/*
+				flex-grow
+				flex-basis: auto;
+				flex-shrink;
+				flex-shrink
+				flex-shrink
+
+			*/
+			/*.ordem1{
+				order: 1;
+			}
+			.ordem2{
+				order: 2;
+			}
+			.ordem3{
+				order:3;
+			}
+			.ordem4{
+				order: 4;
+			}
+
+			.item1{
+				flex-grow: 1;
+			}
+			.item2{
+				flex-shrink: 3;
+				flex-basis: 100;
+			}
+			*/
+		</style>
+
+	</head>
+
+	<body>	
+
+		<h1>Flexbox</h1>
+		<div id="conteudo">
+			<div class="item">
+				<p>Lorem  consectetur adipisicing elit. Qui, facere adipisci excepturi rem animi perferendis consequuntur neque ipsam cum ducimus saepe perspiciatis reprehenderit. Temporibus architecto maiores ab in et est.</p>
+			</div>
+			<div class="item ">02</div>
+			<div class="item">03</div>
+			<div class="item ">04</div>
+			<div class="item ">05</div>
+		</div>
+
+		
+	</body>
+
+</html>
