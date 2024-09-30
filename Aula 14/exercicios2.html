@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+/* Questão 2*/
+
+let peso = parseFloat(prompt("Digite seu peso"))
+let altura = parseFloat(prompt("Digite sua altura"))
+let imc = peso / (altura * altura)
+
+if(imc <= 20){
+    alert('Abaixo do peso')
+}else if(imc > 20 && imc <= 25){
+    alert('Peso normal')
+}else if(imc > 25 && imc <= 30){
+    alert('Sobre peso')
+}else if(imc > 30 && imc <= 40){
+    alert('Obeso')
+}else if(imc >= 40){
+    alert('Obeso mórbido')
+}
+    
+/* Questão 3*/
+
+let saldo = parseInt(prompt('Digite um numero'))
+let credito = (saldo * 1.0 )
+
+
+
+
+/* Questão 4*/
+
+   let idade = parseInt(prompt('Digite sua idade'))
+
+   if(idade < 16){
+        alert('Não eleitor')
+   }else if(idade >= 18 && idade < 65){
+        alert('Eleitor obrigatório')
+   }else if(idade > 16 && idade <= 18 && idade >= 65){
+        alert('Eleitor facultativo')
+   }
+
+
+</script>
+<body>
+    
+</body>
+</html>

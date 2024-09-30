@@ -8,10 +8,18 @@
 
 <script>
 
+/* Questão 1*/
+
+let x = parseFloat(prompt("Digite um numero"))
+let y = parseFloat(prompt("Digite um numero"))
+
+let soma = x + y
+console.log(soma)
+
 
 /* Questão 2*/
 
-let salario = parseInt(prompt("Digite o salario"))
+let salario = parseFloat(prompt("Digite o salario"))
 let novoSalario = (salario * 1.2 )
 console.log(novoSalario)
 
@@ -30,6 +38,114 @@ if(media >=7){
 } else if(media < 4) {
     alert ('Reprovado')
 }
+
+/* Questão 4*/
+
+let lado = parseFloat(prompt("Digite o lado"))
+let área = lado * lado
+console.log(area)
+
+/* Questão 5*/
+
+let base = parseFloat(prompt("Digite a base"))
+let altura = parseFloat(prompt("Digite a altura"))
+
+let area = (base * altura) / 2
+console.log(area)
+
+
+/* Questão 6*/
+
+let numero = parseInt(prompt("Digite um numero"))
+if(numero>0){
+    alert("Positivo")
+}else if(numero == 0) {
+    alert("zero")
+}else{
+    alert("Negativo")
+}
+
+/* Questão 7*/
+
+let número = parseInt(prompt("Digite um numero"))
+if(número > 10){
+    alert ('Maior que 10')
+}else{
+    alert ('Menor ou igual a 10')
+}
+
+/* Questão 8*/
+
+let Idade = parseInt(prompt("Digite sua idade"))
+if(idade < 18){
+    alert('Não pode dirigir')
+}else{
+    alert('Pode dirigir')
+}
+
+/* Questão 9*/
+
+let x = parseInt(prompt("Digite um numero"))
+if(x % 2 == 0){
+    alert('par')
+}else{
+    alert('impar')
+}
+
+/* Questão 10*/
+
+let idade = parseInt(prompt('Digite sua idade'))
+let carteira = confirm('Tem carteira?')
+
+if(idade >= 18 && carteira == true){
+    alert ('pode dirigir')
+}else{
+    alert ('pode não mah')
+}
+
+/* Questão 11*/
+
+let nota = parseInt(prompt('Digite sua nota'))
+
+if(nota >= 7){
+    alert ('Aprovado')
+}else if(nota < 7 && nota >= 5){
+    alert ('Recuperacao')
+}else if(nota < 5){
+    alert ('Reprovado')
+}
+
+/* Questão 12*/
+
+let x = parseInt(prompt('Digite um numero'))
+if(x % 5 == 0 && x % 3 == 0){
+    alert('é divisível por 3 e por 5')
+}else{
+    alert ('não é divisível por 3 e por 5')
+}
+
+/* Questão 13*/
+
+let hora = parseInt(prompt('Digite a hora'))
+if(hora >= 5 && hora < 12){
+    alert('Bom dia')
+}else if(hora >= 12 && < 18){
+    alert('Boa tarde')
+}else if(hora >= 18 && hora <= 23){
+    alert('Boa noite')
+}
+
+/* Questão 14*/
+
+let a = parseFloat(prompt("Digite um numero"))
+let b = parseFloat(prompt("Digite um numero"))
+
+if(a + b > 10){
+    alert('Soma maior que 10')
+}else{
+    alert('Soma menor ou igual a 10')
+}
+
 
 </script>
 
