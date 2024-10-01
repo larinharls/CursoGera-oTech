@@ -14,13 +14,13 @@ let peso = parseFloat(prompt("Digite seu peso"))
 let altura = parseFloat(prompt("Digite sua altura"))
 let imc = peso / (altura * altura)
 
-if(imc <= 20){
+if(imc < 20){
     alert('Abaixo do peso')
-}else if(imc > 20 && imc <= 25){
+}else if(imc >= 20 && imc < 25){
     alert('Peso normal')
-}else if(imc > 25 && imc <= 30){
-    alert('Sobre peso')
-}else if(imc > 30 && imc <= 40){
+}else if(imc >= 25 && imc < 30){
+    alert('Sobrepeso')
+}else if(imc >= 30 && imc < 40){
     alert('Obeso')
 }else if(imc >= 40){
     alert('Obeso mórbido')
@@ -28,10 +28,19 @@ if(imc <= 20){
     
 /* Questão 3*/
 
-let saldo = parseInt(prompt('Digite um numero'))
-let credito = (saldo * 1.0 )
-
-
+let saldo = parseFloat(prompt('Digite seu saldo'))
+if(saldo <= 500){
+    alert('Nenhum crédito')
+}else if(saldo > 500 && saldo <= 1000){
+    let credito = saldo * (30 / 100)
+    alert('Seu saldo: ' + saldo + "\nCrédito: " + credito)
+}else if(saldo > 1000 && saldo <= 3000){
+    let credito = saldo * (40 / 100)
+    alert('Seu saldo: ' + saldo + "\nCrédito: " + credito)
+}else if(saldo > 3000){
+    let credito = saldo * (50 / 100) //0.5
+    alert('Seu saldo: ' + saldo + "\nCrédito: " + credito)
+}
 
 
 /* Questão 4*/
@@ -42,9 +51,72 @@ let credito = (saldo * 1.0 )
         alert('Não eleitor')
    }else if(idade >= 18 && idade < 65){
         alert('Eleitor obrigatório')
-   }else if(idade > 16 && idade <= 18 && idade >= 65){
+   }else if(idade >= 16 && idade <= 18 && idade >= 65){
         alert('Eleitor facultativo')
    }
+
+
+/* Questão 5*/
+
+let = prato = parseInt(prompt('Digite seu prato:\n1- Vegetariano\n2- Peixe\n3- Frango\n4- Carne'))
+let = caloria = 0
+
+if(prato == 1){
+    caloria += 180
+}else if(prato == 2){
+    caloria += 230
+}else if(prato == 3){
+    caloria += 250
+}else if (prato == 4){
+    caloria += 350
+}
+
+let = sobremesa = parseInt(prompt('Digite sua sobremesa:\n1- Abacaxi\n2- Sorvete diet\n3- Mouse diet\n4- Mouse chocolate'))
+
+if(sobremesa == 1){
+    caloria += 75
+}else if(sobremesa == 2){
+    caloria += 110
+}else if(sobremesa == 3){
+    caloria += 170
+}else if(sobremesa == 4){
+    caloria += 200
+}
+
+let = bebida = parseInt(prompt('Digite sua bebida:\n1- Chá\n2- Suco de laranja\n3- Suco de melão\n4- Refrigerante diet'))
+
+if(bebida == 1){
+    caloria += 20
+}else if(bebida == 2){
+    caloria += 70
+}else if(bebida == 3){
+    caloria += 100
+}else if(bebida == 4){
+    caloria += 65
+}
+
+alert('Sua quantidade total de calorias é: '+caloria)
+
+
+/* Questão 6*/
+
+let dia = parseInt(prompt('Digite um dia'))
+
+if(dia == 1){
+    alert('Domingo')
+}else if(dia == 2){
+    alert('Segunda-feira')
+}else if(dia == 3){
+    alert('Terça-feira')
+}else if(dia == 4){
+    alert('Quarta-feira')
+}else if(dia == 5){
+    alert('Quinta-feira')
+}else if(dia == 6){
+    alert('Sexta-feira')
+}else if(dia == 7){
+    alert('Sábado')
+}
 
 
 </script>

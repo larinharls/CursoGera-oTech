@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+
+/*
+    for -> Quando você sabe a quantidade de vezes que vai se repetir
+*/
+let senha = 'lobo'
+let senhaDigitada = prompt('Digite a senha')
+
+for (var i = 0; i < 3; i++){
+    if(senha == senhaDigitada){
+        break
+    }else{
+        alert('Senha incorreta')
+        senhaDigitada = prompt('Digite a senha')
+        console.log(i)
+    }
+}
+if (i == 3 && senha != senhaDigitada){
+    alert('Senha bloqueada')
+}else{
+    alert('Senha correta')
+}
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
