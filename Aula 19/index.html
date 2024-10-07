@@ -17,38 +17,53 @@
       // 1. Crie uma estrutura que receba o nome, idade e curso de um aluno. 
       //Adicione essas informações em um array e exiba no alert
 
+        //let aluno = [];
+        //   aluno[0] = prompt("nome");
+        //   aluno[1] = prompt("idade");
+        //   aluno[2] = prompt("curso");
+        //   alert(
+        //     "olá " +
+        //       aluno[0] +
+        //       " sua idade é " +
+        //       aluno[1] +
+        //       " seu curso é " +
+        //       aluno[2]
+        //   );
 
+        //   let nome = "Maria";
+        //   alert(nome.length);
+        //   alert(nome[2]);
 
     // 2. Considere o seguinte array de notas [5.5, 6, 4.3, 7, 3.2, 8.2]. Crie um algoritmo que 
 	// percorra esse array. E caso encontre alguma nota abaixo da média (média = 6), 
 	// acrescente mais um ponto neste item. Ao final, exiba o array no console.
 
-    //notas = [5]
-    //tam = notas.length
-    //for (i = 0; i < tam; i++)
-    //{
-    //    if(notas[i] < 6){
-    //        notas[i]++
-    //    }
-    //}
-    //console.log(notas)
+        //notas = [5]
+        //tam = notas.length
+        //for (i = 0; i < tam; i++)
+        //{
+        //    if(notas[i] < 6){
+        //        notas[i]++
+        //    }
+        //}
+        //console.log(notas)
 
     // 3. Leia 10 números. Se o número for par, adicione o número em um array pares. Se o 
     // número for ímpar adicione-o em um array de ímpares.
 
-    let numerosPares= []
-    let numerosImpares = []
-    let numero = 0
-    for (let i = 0; i < 10; i++){
-        numero = parseInt(prompt('Digite um número'))
-        if(numero % 2 == 0){
-            numerosPares.push(numero)
-        }else{
-            numerosImpares.push(numero)
-        }
-    }
-    alert(numerosPares)
-    alert(numerosImpares)
+        // let numerosPares= []
+        // let numerosImpares = []
+        // let numero = 0
+        // for (let i = 0; i < 10; i++){
+        //     numero = parseInt(prompt('Digite um número'))
+        //     if(numero % 2 == 0){
+        //         numerosPares.push(numero)
+        //     }else{
+        //         numerosImpares.push(numero)
+        //     }
+        // }
+        // alert(numerosPares)
+        // alert(numerosImpares)
 
 
     //4. Você está gerenciando uma fila de atendimento ao cliente. Novos clientes chegam e 
@@ -56,16 +71,25 @@
 //novo cliente ao final da fila e imprima o estado atualizado da fila.
 //Fila: 'Ana', 'Bruno' e 'Carla'.
 
-
-
-
-
+    // let fila = ['Ana', 'Bruno', 'Carla']
+    // let nome = prompt('Digite o próximo da fila')
+    // fila.push(nome)
+    // alert(fila)
+    // alert('Ana foi atendida')
+    // fila.shift()
+    // alert(fila)
 
 //5. Continuando a questão anterior, o final do dia, você precisa remover o último cliente 
 //que ficou na fila, pois o atendimento não poderá ser realizado. Dado um array 
 //representando a fila de atendimento, remova o último cliente da fila e imprima o nome do 
 //cliente removido, além do estado atualizado da fila.
 
+    //let numero = ["a", "b", "c", "d", "e", "f"];
+      //   alert(numero[numero.length - 1]);
+
+      //   let ultimo = [numero.pop()];
+      //   console.log(ultimo);
+      //   console.log(numero);
 
 //6. Você está trabalhando em um sistema de gerenciamento de biblioteca e precisa 
 //verificar se um livro específico está disponível ou não. Você tem um array que contém os 
@@ -73,12 +97,38 @@
 //está na lista e imprima uma mensagem adequada.
 //Livros disponíveis: "Dom Casmurro", "O Pequeno Príncipe", "1984" e "O Hobbit"
 
+    // let livros = ["Dom Casmurro" , "O Pequeno Príncipe" , "1984" , "O Hobbit"]
+    // let livroBuscado = prompt('Digite o livro')  
+        
+    // let temLivro = livros.includes()
 
-   
-    
+    // if(temLivro == true){
+    //     alert('Seu livro está disponível')
+    // }else{
+    //     alert('Seu livro não está disponível')
+    // }
+
+// 7. Você é responsável pelo controle de estoque de um supermercado e precisa verificar 
+// rapidamente se determinado produto está em falta. A lista de produtos em estoque está 
+// armazenada em um array. Utilizando o método includes(), crie um script que verifique se 
+// um produto específico está presente no array. Se o produto estiver disponível, imprima 
+// uma mensagem informando que o produto está em estoque. Caso contrário, informe que 
+// o produto está em falta.
+// Em estoque: "arroz", "feijão", "macarrão", "açúcar", "café"
+
+    // let estoque = ["arroz", "feijão", "macarrão", "açúcar", "café"]
+    // let produto = prompt('Digite o produto')
+    // let emEstoque = estoque.includes(produto)
+
+    // if(emEstoque == true){
+    //     alert('Produto disponível')
+    // }else{
+    //     alert('Produto indisponível')
+    // }
 
 
     //
+
 
     /*let numeros = [];
       // método push() -> adiciona um elemento no final do array
@@ -118,7 +168,39 @@
     */
 
 
+    // Funções
 
+    function soma(a, b) {
+        let soma = a + b;
+        return soma;
+      }
+
+      function calculaMedia(a, b, c) {
+        let media = (a + b + c) / 3;
+        return media;
+      }
+
+      function verificarPar(x) {
+        if (x % 2 == 0) {
+          alert("par");
+        } else {
+          alert("impar");
+        }
+      }
+
+      //   let x = 3;
+      //   let y = 5;
+
+      //   alert(soma(x, y));
+      //   let nota1 = parseInt(prompt("Digite a nota"));
+      //   let nota2 = parseInt(prompt("Digite a nota"));
+      //   let nota3 = parseInt(prompt("Digite a nota"));
+
+      //   let media = calculaMedia(nota1, nota2, nota3);
+      //   alert(media);
+
+      verificarPar(5);
+      
     </script>
   </head>
   <body></body>
