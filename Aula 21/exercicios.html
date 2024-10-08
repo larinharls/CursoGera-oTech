@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+//Questões
+
+// 01. Escreva uma função chamada encontrarMaior que receba um array de números como argumento e retorne o maior número do array. 
+// Use um loop para iterar pelos elementos.
+
+// 02.Crie uma função chamada operacaoMatematica que receba dois números e uma string indicando a operação matemática a ser realizada.
+//  As operações possíveis são "soma", "subtração", "multiplicação", "divisão". Use um switch para determinar a operação.
+
+// 03.Implemente uma função chamada somarArray que receba um array de números e retorne a soma de todos os elementos. Use um loop for.
+
+
+
+// Implemente um programa que permita ao usuário gerenciar uma lista de tarefas do dia. 
+// O programa deve ter duas funções principais:
+
+// 1. Função para adicionar tarefas: Esta função deve pedir ao usuário para inserir uma nova tarefa e adicioná-la ao array de tarefas.
+
+
+// 2. Função para remover tarefas: Esta função deve pedir ao usuário para informar uma tarefa que ele já realizou e remover essa tarefa do array.
+
+
+
+// Além disso, o programa principal deve funcionar da seguinte forma:
+
+// O usuário será perguntado, repetidamente, se ele deseja "adicionar" uma nova tarefa ou "remover" uma tarefa realizada.
+
+// Dependendo da escolha, o programa deve chamar a função correspondente para adicionar ou remover a tarefa.
+
+let controle = 0
+let tarefas = []
+while(controle != 'sair'){
+    controle = prompt('Digite se deseja adicionar remover ou sair')
+    if(controle == 'adicionar'){
+        addTarefa (tarefas)
+    }else if (controle == 'remover'){
+        removerTarefa (tarefas)
+    }
+}
+
+function addTarefa(tarefas){
+    let tarefa = prompt('Digite a tarefa')
+    tarefas.push (tarefa)
+    return tarefas
+}
+function removerTarefa(tarefas){
+    let tarefa = prompt('Suas tarefas são: ' +tarefas+'\nQual você quer remover')
+    let index = tarefas.indexOf(tarefa)
+    tarefas.splice(index, 1)
+    return tarefas
+}
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

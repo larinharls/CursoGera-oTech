@@ -33,7 +33,7 @@
 //Maiores de Adulto 
 //18 anos (inclusive)
 
-/*let idade = parseInt(prompt('Digite sua idade'))
+let idade = parseInt(prompt('Digite sua idade'))
 function classificar (idade){
     if (idade >= 5 && idade <= 7){
         return 'Infantil A'
@@ -48,13 +48,21 @@ function classificar (idade){
     }
 }
 alert(classificar(idade))
-*/
 
 //2. Faça uma função que recebe um valor inteiro e verifica se o valor é positivo ou 
 //negativo. A função deve retornar um valor booleano.
 
-function verificarValor (true, false)
-
+let numero = parseInt(prompt('Digite um numero'))
+function verificarPositivo (x){
+    if(x > 0){
+        return true
+    }else if(x == 0){
+        return 'zero'
+    }else{
+        return false
+    }
+}
+alert(verificarPositivo(numero))
 
 //3. Faça um procedimento que recebe 3 valores inteiros por parâmetro e retorna-os 
 //ordenados em ordem crescente.
