@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+</head>
+<body>
+
+<input id="email" type="email" name="email" placeholder="Digite seu email">
+<br>
+<input id="senha" type="text" name="senha" placeholder="Digite sua senha">
+<input type="submit" name="" id="" onclick="validar()">
+
+</body>
+<script>
+
+function validar(){
+    let email = document.getElementById('email')
+    let senha = document.getElementById('senha')
+    if(email.value == '' || senha.value == ''){
+        alert('Erro')
+    }else{
+        alert('Campos preenchidos')
+    }
+}
+
+</script>
+</html>

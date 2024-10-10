@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
 </head>
 <body>
     
-<input id="nome" type="text" name="name" placeholder="Digite seu nome">
+<input id="nome" type="text" name="nome" placeholder="Digite seu nome">
 <br>
-<input id="sobrenome" type="text" name="nome" placeholder="Digite seu sobrenome">
+<input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome">
 <input type="submit" id="" value="Trocar" onclick="capturaNome()" >
 
 </body>
@@ -18,16 +17,16 @@
 <script>
 
 function capturaNome(){
-let nome = document.getElementById('nome').value
-let input1 = document.getElementById('nome')
-let input2 = document.getElementById('sobrenome')
+let nome1 = document.getElementById('nome')
+console.log(nome1)
+let nome2 = document.getElementById('sobrenome')
+console.log(nome2)
 
 let aux = 0
-aux = input1
-input1 = input2
-input2 = aux
+aux = nome1.value
+nome1.value = nome2.value
+nome2.value = aux
 }
-
 
 </script>
 </html>
