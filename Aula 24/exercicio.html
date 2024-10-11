@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Modelo:</label>
+    <br>
+    <input id="modelo" type="text" name="modelo">
+    <br>
+    <label for="">Portas:</label>
+    <br>
+    <input id="portas" type="text" name="portas">
+    <br>
+    <label for="">Cor:</label>
+    <br>
+    <input id="cor" type="text" name="cor">
+    <br>
+    <label for="">Imagem:</label>
+    <br>
+    <input id="imagem" type="text" name="imagem">
+    <input type="submit" id="cadastrar" value="Cadastrar" onclick="cadastrarCarro()">
+
+    <hr>
+    <h1>Buscar o carro:</h1>
+    <input type="text" id="modeloBuscado">
+    <button type="button">Buscar</button>
+
+</body>
+<script>
+    let carros = []
+    function cadastrarCarro(){
+        let modeloDigitado = document.getElementById('modelo').value
+        let portasDigitado = document.getElementById('portas').value
+        let corDigitado = document.getElementById('cor').value
+        let imagemDigitado = document.getElementById('imagem').value
+
+        let carro = {
+            modelo: modeloDigitado,
+            portas: portasDigitado,
+            cor: corDigitado,
+            imagem: imagemDigitado,
+        }
+        carros.push(carro)
+        console.log(carros)
+    }
+
+</script>
+</html>
