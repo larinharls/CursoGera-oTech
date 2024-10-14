@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+</head>
+<body>
+
+<h1>Lista de Carros</h1>
+<button onclick="listarCarros()" id="listarCarros">Listar Carros</button>
+<button id="mostrarModelos">Mostrar Modelos</button>
+<button id="filtrarCarros">Filtrar Carros Caros</button>
+<button id="calcularPrecoTotal">Calcular Preço Total</button>
+
+<ul id="resultado"></ul>
+    
+
+</body>
+<script>
+
+let carros = [
+    { modelo: 'Fusca', preco: 15000, ano: 1972 },
+    { modelo: 'Civic', preco: 80000, ano: 2020 },
+    { modelo: 'Fiesta', preco: 45000, ano: 2015 },
+    { modelo: 'Camaro', preco: 300000, ano: 2021 },
+    { modelo: 'Gol', preco: 30000, ano: 2010 },
+    { modelo: 'Corolla', preco: 70000, ano: 2019 }
+];
+
+function listarCarros(){
+    carros.forEach(
+        carro => {
+            console.log(carro.modelo)
+        }
+    )
+}
+
+
+
+
+
+
+let  = [
+    {
+        modelo: 'fusca',
+        preco: 15000,
+        ano: 1972
+    },
+    {
+        modelo: 'civic',
+        preco: 80000,
+        ano: 2020
+    },
+    {
+        modelo: 'fiesta',
+        preco: 45000,
+        ano: 2015
+    },
+    {
+        modelo: 'camaro',
+        preco: 300000,
+        ano: 1972
+    },
+    {
+        modelo: 'gol',
+        preco: 30000,
+        ano: 2010
+    }
+]
+    
+const listarCarros = () => {
+    carros.forEach(carro => {
+        console.log(`O carro ${carro.modelo} custa R$${carro.preco}.`);
+    });
+};
+
+
+</script>
+
+</html>

@@ -6,46 +6,82 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="">Modelo:</label>
-    <br>
-    <input id="modelo" type="text" name="modelo">
-    <br>
-    <label for="">Portas:</label>
-    <br>
-    <input id="portas" type="text" name="portas">
-    <br>
-    <label for="">Cor:</label>
-    <br>
-    <input id="cor" type="text" name="cor">
-    <br>
-    <label for="">Imagem:</label>
-    <br>
-    <input id="imagem" type="text" name="imagem">
-    <input type="submit" id="cadastrar" value="Cadastrar" onclick="cadastrarCarro()">
-
+    <form action="">
+        
+        <input type="text" id="modelo" placeholder="modelo"><br>
+        <input type="text" id="portas" placeholder="portas"><br>
+        <input type="text" id="cor" placeholder="cor"><br>
+        <input type="text" id="imagem" placeholder="imagem"><br>
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+        
+    </form>
     <hr>
-    <h1>Buscar o carro:</h1>
-    <input type="text" id="modeloBuscado">
-    <button type="button">Buscar</button>
+    <div id="campoBusca">
+        <h1>Buscar o carro</h1>
+        <input type="text" id="modeloBuscado">
+        <button onclick="buscar()" type="button">Buscar</button>
+        <img width="150px" src="https://media.moneytimes.com.br/uploads/2023/10/gol-vw.jpg">
+    </div>
+    
+
 
 </body>
+
 <script>
-    let carros = []
-    function cadastrarCarro(){
+    let carros = [
+        {modelo:'gol',
+            portas:2,
+            cor: 'preto',
+            imagem: 'https://media.moneytimes.com.br/uploads/2023/10/gol-vw.jpg'
+        },
+        {modelo:'celta',
+            portas:'4',
+            cor: 'verde',
+            imagem: 'doi'
+        }
+    ]
+    function cadastrar(){
         let modeloDigitado = document.getElementById('modelo').value
         let portasDigitado = document.getElementById('portas').value
         let corDigitado = document.getElementById('cor').value
         let imagemDigitado = document.getElementById('imagem').value
 
         let carro = {
-            modelo: modeloDigitado,
-            portas: portasDigitado,
+            modelo:modeloDigitado,
+            portas:portasDigitado,
             cor: corDigitado,
-            imagem: imagemDigitado,
+            imagem: imagemDigitado
         }
+        
         carros.push(carro)
         console.log(carros)
     }
 
+
+    function buscar(){
+        let busca = document.getElementById('modeloBuscado').value
+        busca = parseInt(busca)
+        let carroBuscado = carros[busca]
+        
+
+        let titulo = document.createElement('h1')
+        titulo.innerHTML = carroBuscado.modelo
+        
+        let divResultado = document.getElementById('campoBusca')
+        divResultado.appendChild(titulo)
+
+        let imagem = document.createElement('img')
+        imagem.setAttribute('width','150px')
+        imagem.setAttribute('src',carroBuscado.imagem)
+        
+
+        console.log(imagem)
+        divResultado.appendChild(imagem)
+
+
+    }
+    
+
 </script>
+
 </html>
