@@ -1,0 +1,16 @@
+/* CSS - Global*/
+body{
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  margin-bottom: 500px;
+}
+h1 {
+  color: blue;
+}
+.paragrafo1{
+  background-color: black;
+  color: white;
+}
+p{
+  color: blue;
+}
