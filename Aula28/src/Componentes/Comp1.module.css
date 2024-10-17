@@ -1,0 +1,7 @@
+.Lista{
+    border: solid 1px red;
+    list-style-type: none;
+}
+
+
+<button onClick={aumento}>Aumentar<button/>
