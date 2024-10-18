@@ -6,10 +6,15 @@ function Comp1(){
     // let Imagens2 = ['jacob.jpg', 'bella.jpg']
     let [imgAtual, setImgAtual] = useState(Imagens[0])
 
-    // let [tamanho, setTam] = useState(200)
-    // function aumento(){
-    //     setTam(tamanho+50)
-    // }
+    let [tamanho, setTamanho] = useState(150)
+
+    function aumentar(){
+        setTamanho(tamanho+50)
+    }
+
+    function reduzir(){
+        setTamanho(tamanho-50)
+    }
 
     // let [imgAt2, setImgAt2] = useState(Imagens2[0])
 
@@ -42,9 +47,10 @@ function Comp1(){
                 }
             } src={imgAtual} alt='' width={'500px'} />
 
-            {/* <img src='jacob.jpg' width={`${200}px`}/> 
-            <button onClick={aumento}>Aumentar</button>
-            <button onClick={reduz}>Reduzir</button> */}
+            <img src='jacob.jpg' width={`${tamanho}px`}/> 
+ 
+            <button onClick={aumentar}>Aumentar</button>
+            <button onClick={reduzir}>Reduzir</button>
             
             {/* <img onClick={trocarImagem} src={imgAt2} alt='' /> */}
 
