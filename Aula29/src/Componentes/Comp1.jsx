@@ -1,29 +1,32 @@
-import { useState } from 'react'
-import styles from './Comp1.module.css'
+import { useState } from 'react';
+import styles from './Comp1.module.css';
 
-function Comp1 ({cor, estilo, esp}){
+function Comp1(usuario) {
+console.log(usuario)
+    
+let [nome, setNome] = useState ('')
+let [idade, setIdade] = useState ('')
+let [profissao, setProfissao] = useState ('')
+let clicou = false
 
-    let borde = {border:`${cor} ${estilo} ${esp}`}
-
-    let borda1 = {border:'solid 1px blue'}
-    let borda2 = {border:'solid 1px red'}
-
-    let [borda, setBorda] = useState(borda1)
-
-    function alterarBorda(){
-        if(borda.border == borda1.border){
-            setBorda(borda2)
-        }else{
-            setBorda(borda1)
-        }
-
-    }
-    return(
-        <>
-        {/* <p style={borde}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dignissimos blanditiis delectus, doloribus beatae, commodi ducimus illum quo quod quos nam animi recusandae et molestias velit aut quia rerum vel?</p>
-        <button onClick={alterarBorda}>Alterar Bordas</button> */}
-        </>
-    )
+function mostrarUsuario(){
+setNome(usuario.nome)
+setIdade(usuario.idade)
+setProfissao(usuario.profissao)
+clicou = true
 }
 
-export default Comp1
+    return (
+        <>
+            <button onClick={mostrarUsuario} type='button'>Mostrar Usuario</button>
+            
+            {clicou && (
+                <p>
+                    nome:
+            </p>
+            )}
+        </>
+    );
+}
+
+export default Comp1;

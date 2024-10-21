@@ -6,17 +6,25 @@ import Comp1 from './Componentes/Comp1'
 
 function App() {
 
-  let cor = 'purple'
-  let esp = '10px'
 
-  let nome = ''
-  let idade = ''
-  let profissao = ''
+  let [nome, setNome] = useState ('')
+  let [idade, setIdade] = useState ('')
+  let [profissao, setProfissao] = useState ('')
+  let [usuarioCadastrado, setUsuarioCadastrado] = useState(null)
 
   function carregarDados(){
-  nome = document.getElementById('nome').value
-  idade = document.getElementById('idade').value
-  profissao = document.getElementById('profissao').value
+  setNome(document.getElementById('nome').value)
+  setIdade(document.getElementById('idade').value)
+  setProfissao(document.getElementById('profissao').value)
+
+  let cadastro = {
+    nome: nome,
+    idade: idade,
+    profissao: profissao
+  }
+  setUsuarioCadastrado(cadastro)
+  
+  console.log(usuarioCadastrado)
   }
   
   return (
@@ -31,7 +39,7 @@ function App() {
       <input type="profissao" placeholder='Digite sua profissão'/><br/>
       <button onClick={carregarDados} type='button'>Enviar</button>
 
-      <Comp1 nome={nome} idade={idade} profissao={profissao}/>
+      {usuarioCadastrado && (<Comp1 usuario = {usuarioCadastrado}/>)}
     </>
   )
 }
